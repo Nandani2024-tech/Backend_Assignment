@@ -3,3 +3,5 @@ venv/
 __pycache__/
 *.log
 notes.txt
+data-engineering-assignment/credentials/
+*.json
