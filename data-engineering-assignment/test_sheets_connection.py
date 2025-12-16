@@ -14,8 +14,9 @@ creds = Credentials.from_service_account_file(
 
 client = gspread.authorize(creds)
 
-sheet = client.open("Student_Registration_Messy").sheet1
+sheet = client.open("Student Auto Registration").sheet1
 data = sheet.get_all_records()
 
 print("✅ Google Sheets Connected")
+print(f"Rows fetched: {len(data)}")
 print("Sample Row:", data[0] if data else "No data")
